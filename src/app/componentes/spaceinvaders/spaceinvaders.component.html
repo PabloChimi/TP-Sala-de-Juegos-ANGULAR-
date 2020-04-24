@@ -1,0 +1,13 @@
+
+<app-cabecera>  </app-cabecera>
+<div style="margin-top: 20px;">
+    <canvas id="GameCanvas" width="720" height="480">
+    </canvas>
+    
+    <div class="label score" style="margin-top: 70px;">{{gameState}} Score: {{gameScore}} </div>
+    <div class="label lives" style="margin-top: 70px;">Lives: {{gameLives}}</div>
+    <div *ngIf="gameState === GAME_STATE.PAUSE" class="label pause-screen">Paused</div>
+    <div *ngIf="gameState === GAME_STATE.START" class="label start-screen">Press Enter to start new game.</div>
+    <div *ngIf="gameState === GAME_STATE.OVER" class="label game-over-screen">GAME OVER<br />Press Enter to start new game.</div>
+
+</div>

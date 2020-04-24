@@ -57,6 +57,7 @@ import { SexoPipe } from './pipes/sexo.pipe';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PptComponent } from './componentes/ppt/ppt.component';
+import { SpaceinvadersComponent } from './componentes/spaceinvaders/spaceinvaders.component';
 
 
 @NgModule({
@@ -84,7 +85,8 @@ import { PptComponent } from './componentes/ppt/ppt.component';
     JugadoresListadoComponent,
     InputJugadoresComponent,
     SexoPipe,
-    PptComponent
+    PptComponent,
+    SpaceinvadersComponent
   ],
   imports: [
     BrowserModule,

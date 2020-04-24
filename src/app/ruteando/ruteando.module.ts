@@ -23,6 +23,7 @@ import { ListadoDePaisesComponent } from '../componentes/listado-de-paises/lista
 import { MapaDeGoogleComponent } from '../componentes/mapa-de-google/mapa-de-google.component'
 import { JugadoresListadoComponent } from '../componentes/jugadores-listado/jugadores-listado.component';
 import { from } from 'rxjs';
+import { SpaceinvadersComponent } from '../componentes/spaceinvaders/spaceinvaders.component';
 
 
 // declaro donde quiero que se dirija
@@ -41,6 +42,7 @@ const MiRuteo = [
 component: JuegosComponent ,
 children:
      [{path: '' , component: MenuCardComponent},
+     {path: 'Spaceinvaders', component: SpaceinvadersComponent},
      {path: 'Ppt', component: PptComponent},
      {path: 'Adivina' , component: AdivinaElNumeroComponent},
       {path: 'AdivinaMasListado' , component: AdivinaMasListadoComponent},
